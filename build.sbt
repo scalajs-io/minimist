@@ -9,25 +9,24 @@ val apiVersion = "1.2.0"
 val scalaJsIOVersion = "0.3.0.4"
 val scalaJsVersion = "2.12.1"
 
-homepage := Some(url("https://github.com/scalajs-io/minimist"))
-
 lazy val root = (project in file(".")).
   enablePlugins(ScalaJSPlugin).
+  settings(publishingSettings: _*).
   settings(
     name := "minimist",
     organization := "io.scalajs.npm",
     description := "parse argument options",
     version := apiVersion,
+    homepage := Some(url("https://github.com/scalajs-io/minimist")),
     scalaVersion := scalaJsVersion,
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-language:implicitConversions", "-Xlint"),
     scalacOptions in(Compile, doc) ++= Seq("-no-link-warnings"),
     autoCompilerPlugins := true,
     scalaJSModuleKind := ModuleKind.CommonJSModule,
     libraryDependencies ++= Seq(
-	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
-	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-	    "io.scalajs" %%% "nodejs" % scalaJsIOVersion
-  ))
+      "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
+      "io.scalajs" %%% "nodejs" % scalaJsIOVersion
+    ))
 
 /////////////////////////////////////////////////////////////////////////////////
 //      Publishing
