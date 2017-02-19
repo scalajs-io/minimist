@@ -6,7 +6,7 @@ import sbt._
 import scala.language.postfixOps
 
 val apiVersion = "1.2.0"
-val scalaJsIOVersion = "0.3.0.4"
+val scalaJsIOVersion = "0.3.0.5"
 val scalaJsVersion = "2.12.1"
 
 lazy val root = (project in file(".")).
