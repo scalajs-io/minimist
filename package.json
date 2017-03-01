@@ -1,6 +1,6 @@
 {
-  "name": "minimist-scalajs",
-  "version": "1.2.0",
+  "name": "minimist-sjs",
+  "version": "1.2.0-2",
   "private": true,
   "dependencies": {
     "minimist": "^1.2.0",

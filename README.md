@@ -8,7 +8,6 @@ This module is the guts of optimist's argument parser without all the fanciful d
 
 ### Build Dependencies
 
-* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
@@ -56,7 +55,7 @@ println(s"result: ${result3.toJson}")
 To add the `Minimist` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "minimist" % "1.2.0"
+libraryDependencies += "io.scalajs.npm" %%% "minimist" % "1.2.0-2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
