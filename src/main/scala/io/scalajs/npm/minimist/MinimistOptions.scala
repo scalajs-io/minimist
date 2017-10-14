@@ -1,7 +1,7 @@
 package io.scalajs.npm.minimist
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 import scala.scalajs.js.|
 
 /**
@@ -16,7 +16,7 @@ import scala.scalajs.js.|
   * @param unknown   - a function which is invoked with a command line parameter not defined in the opts configuration object.
   *                  If the function returns false, the unknown option is not added to argv.
   */
-@ScalaJSDefined
+
 class MinimistOptions(val string: js.UndefOr[String | js.Array[String]] = js.undefined,
                       val boolean: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined,
                       val alias: js.UndefOr[js.Object | js.Dictionary[String | js.Array[String]]] = js.undefined,
